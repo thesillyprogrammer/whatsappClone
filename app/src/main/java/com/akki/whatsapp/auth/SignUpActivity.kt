@@ -87,6 +87,9 @@ class SignUpActivity : AppCompatActivity() {
                 downloadURL = it.result.toString()
                 signupNext.isEnabled=true
             }
+            else{
+                Log.d("UNsucessful","Gone")
+            }
         }
 }
 }
