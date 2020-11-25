@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/userImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/ic_default_avatar"
+        android:scaleType="center"
+        app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+    <LinearLayout
+        android:layout_marginStart="10dp"
+        android:layout_width="230dp"
+        android:orientation="vertical"
+        android:layout_height="75dp">
+
+        <TextView
+            android:id="@+id/chatPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:ellipsize="end"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/chatPersonStatus"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/darker_gray"
+            android:text=""
+            android:gravity="center_vertical" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/lastChatDate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/unreadMessages"
+            android:layout_width="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:background="@drawable/round_shape"
+            android:text="6"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</LinearLayout>

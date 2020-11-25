@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".auth.OTPActivity">
+
+    <TextView
+        android:id="@+id/headingOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/spannableText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/countDownTimer"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:id="@+id/OtpBox"
+        android:inputType="phone"
+        android:layout_width="wrap_content"
+        android:hint="------"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:letterSpacing="0.8"
+        android:maxLength="6"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Enter 6-digit code"
+        android:layout_marginTop="20dp" />
+
+<Button
+    android:id="@+id/otpVerify"
+    android:clickable="false"
+    android:backgroundTint="@android:color/darker_gray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="32dp"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    android:text="VERIFY" />
+
+    <Button
+        android:clickable="false"
+        android:backgroundTint="@android:color/darker_gray"
+        android:id="@+id/otpResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="RESEND VERIFICATION CODE" />
+</LinearLayout>
