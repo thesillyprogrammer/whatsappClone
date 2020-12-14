@@ -10,18 +10,19 @@
     android:layout_height="wrap_content">
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:layout_marginStart="10dp"
         android:id="@+id/userImage"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@mipmap/ic_default_avatar"
         android:scaleType="center"
         app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
     <LinearLayout
         android:layout_marginStart="10dp"
-        android:layout_width="230dp"
+        android:layout_width="190dp"
         android:orientation="vertical"
-        android:layout_height="75dp">
+        android:layout_height="60dp">
 
         <TextView
             android:id="@+id/chatPersonName"
@@ -43,38 +44,42 @@
             android:layout_weight="1"
             android:textColor="@android:color/darker_gray"
             android:text=""
+            android:textSize="12sp"
             android:gravity="center_vertical" />
 
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
         android:orientation="vertical"
         >
 
         <TextView
+
             android:id="@+id/lastChatDate"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             android:maxLines="1"
             android:textSize="14sp"
-            android:gravity="center"
+            android:gravity="center_horizontal"
             android:textColor="@color/black" />
+
         <TextView
             android:id="@+id/unreadMessages"
             android:layout_width="20dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_height="0dp"
             android:layout_weight="0.5"
-            android:maxLines="1"
-            android:textSize="14sp"
+            android:background="@drawable/round_shape"
             android:ellipsize="end"
             android:gravity="center"
-            android:background="@drawable/round_shape"
+            android:maxLines="1"
             android:text="6"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="14sp" />
 
 
     </LinearLayout>

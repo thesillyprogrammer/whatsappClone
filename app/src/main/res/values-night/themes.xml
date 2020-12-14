@@ -23,4 +23,18 @@
         <item name="android:windowTranslucentNavigation">true</item>
 
     </style>
+    <style name="chatShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">22dp</item>
+        <item name="cornerSizeTopRight">22dp</item>
+        <item name="cornerSizeBottomLeft">22dp</item>
+        <item name="cornerSizeBottomRight">8dp</item>
+    </style>
+    <style name="chatShapeAppearanceForRecieveMsg">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomRight">22dp</item>
+        <item name="cornerSizeBottomLeft">8dp</item>
+        <item name="cornerSizeTopRight">22dp</item>
+        <item name="cornerSizeTopLeft">22dp</item>
+    </style>
 </resources>

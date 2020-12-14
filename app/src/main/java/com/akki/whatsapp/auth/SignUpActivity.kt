@@ -9,7 +9,7 @@ import android.util.Log
 import androidx.core.widget.addTextChangedListener
 import com.akki.whatsapp.modals.MainActivity
 import com.akki.whatsapp.R
-import com.akki.whatsapp.modals.data.User
+import com.akki.whatsapp.data.User
 import com.google.android.gms.tasks.Continuation
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
